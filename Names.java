@@ -12,7 +12,7 @@ public class RandomNumber {
         n = sc.nextInt();
 
         for(int i = 0; i<n;i++){
-            names[i] = sc.nextLine();
+            names[i] = sc.next();
         }
         System.out.println("Insertion Successful");
 
@@ -33,12 +33,12 @@ public class RandomNumber {
         String key = sc.nextLine();
         int i = 0;
         for(i = 0;i< n;i++){
-            if(names[i]== key){
-                System.out.println("The name you're searching is found at "+i+"th position");
+            //System.out.println(names[i].equals(key));
+            if(names[i].equals(key)){
+                System.out.println("The name you're searching is found at "+i+1+"th position");
             }
         }
-        if(i>n-1)
-            System.out.println("Name not found");
+
 
     }
     public static void update(){
@@ -47,7 +47,7 @@ public class RandomNumber {
         String key = sc.next();
         int i = 0;
         for(i = 0;i< n;i++){
-            if(names[i]==key){
+            if(names[i].equals(key)){
                 System.out.println("Enter the new name");
                 String newname = sc.nextLine();
                 names[i] = newname;
