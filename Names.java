@@ -35,7 +35,7 @@ public class RandomNumber {
         for(i = 0;i< n;i++){
             //System.out.println(names[i].equals(key));
             if(names[i].equals(key)){
-                System.out.println("The name you're searching is found at "+i+1+"th position");
+                System.out.println("The name you're searching is found at "+(i+1)+"th position");
             }
         }
 
@@ -49,7 +49,7 @@ public class RandomNumber {
         for(i = 0;i< n;i++){
             if(names[i].equals(key)){
                 System.out.println("Enter the new name");
-                String newname = sc.nextLine();
+                String newname = sc.next();
                 names[i] = newname;
                 System.out.println("Updation successful");
             }
